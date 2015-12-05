@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.kpvelocite2015.ijarak.activity.LoginActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/nameET"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:clickable="false"
+            android:editable="false"
+            android:elegantTextHeight="false"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="false"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_inputId="@+id/textfield_et_label_input"
+            app:et_labelTextColor="#006633"
+            app:et_supportMode="helper"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/lokasiET"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:clickable="false"
+            android:editable="false"
+            android:elegantTextHeight="false"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Lokasi"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="false"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_inputId="@+id/textfield_et_label_input"
+            app:et_labelTextColor="#006633"
+            app:et_supportMode="helper"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/noHpET"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:clickable="false"
+            android:editable="false"
+            android:elegantTextHeight="false"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="No. Hp"
+            android:inputType="number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="false"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_inputId="@+id/textfield_et_label_input"
+            app:et_labelTextColor="#006633"
+            app:et_supportMode="helper"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/passwordET"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="#FF000000"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_helper="Password must be at least 6 characters"
+            app:et_inputId="@+id/textfield_et_label_error_input"
+            app:et_labelTextColor="#006633"
+            app:et_supportMode="helperWithError"
+            app:et_supportTextErrorColor="#FFFF0000" />
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/retypeET"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Re-type Password"
+            android:inputType="textPassword"
+            android:nestedScrollingEnabled="false"
+            app:et_dividerErrorColor="#FFFF0000"
+            app:et_helper="Must be the same with typed password"
+            app:et_inputId="@+id/textfield_et_label_error_input"
+            app:et_labelTextColor="#006633"
+            app:et_supportMode="helperWithError"
+            app:et_supportTextErrorColor="#FFFF0000"/>
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/registerButton"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:singleLine="false"
+            android:text="REGISTER"
+            android:textColor="#006633"
+            android:textSize="14dp"
+            app:rd_enable="true"
+            app:rd_padding="0dp"
+            app:rd_rippleType="wave" />
+
+    </LinearLayout>
+
+</ScrollView>
