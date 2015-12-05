@@ -3,13 +3,13 @@
     android:layout_height="match_parent"
     tools:context="com.kpvelocite2015.ijarak.activity.AboutActivity">
 
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/app_bar" />
+    <include layout="@layout/app_bar_home" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/app_bar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:layout_below="@+id/app_bar"
+        android:text="Setting"/>
 
 </RelativeLayout>

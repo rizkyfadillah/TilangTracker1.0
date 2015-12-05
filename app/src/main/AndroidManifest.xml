@@ -75,21 +75,45 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.HomeActivity" />
         </activity>
+        <activity
+            android:name=".activity.ListBeritaActivity"
+            android:label="@string/title_activity_berita_list" >
 
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAHljm33KhvU9VSIkgfgU-dzqBpBcYIzD8" />
-
-        <service
-            android:name=".FetchAddressIntentService"
-            android:exported="false" />
-
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+            >
+        </activity>
         <activity
             android:name=".activity.BeritaActivity"
             android:label="@string/title_activity_berita" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListBeritaActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".activity.TilangActivity"
+            android:label="@string/title_activity_tilang" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.HomeActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".activity.DataPelanggarActivity"
+            android:label="@string/title_activity_data_pelanggar" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListBeritaActivity" />
+            >
         </activity>
     </application>
 

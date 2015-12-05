@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:icon="@drawable/home"
+            android:title="Home" />
+        <item android:id="@+id/news" android:icon="@drawable/news"
+            android:title="News Feed" />
+        <item android:id="@+id/find_now" android:icon="@drawable/find"
+            android:title="Tilang" />
+    </group>
+    <item android:title="Traffic and Education">
+        <menu>
+            <item android:id="@+id/plat" android:icon="@drawable/valid"
+                android:title="Traffic Rules" />
+            <item android:id="@+id/traffic_rules" android:icon="@drawable/traffic"
+                android:title="Traffic Education" />
+        </menu>
+    </item>
+    <item android:id="@+id/traffic_edu" android:icon="@drawable/edu"
+        android:title="Logout" />
+
+</menu>

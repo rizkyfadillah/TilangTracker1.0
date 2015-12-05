@@ -5,11 +5,5 @@
     android:orientation="vertical"
     tool:context="com.kpvelocite2015.ijarak.fragment.RequestJemputFragment">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Request Jemput Cucian"/>
 
 </RelativeLayout>

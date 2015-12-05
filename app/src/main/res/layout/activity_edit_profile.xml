@@ -6,9 +6,8 @@
     android:orientation="vertical"
     tools:context="com.kpvelocite2015.ijarak.fragment.EditProfileFragment">
 
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/app_bar" />
+    <include layout="@layout/app_bar_home" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/app_bar" />
 
     <EditText
         android:id="@+id/editText3"
@@ -46,7 +45,6 @@
 
     <Button
         android:id="@+id/saveButton"
-        style="@style/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

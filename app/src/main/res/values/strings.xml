@@ -1,46 +1,31 @@
 <resources>
-    <string name="app_name">iJarak</string>
-    <string name="title_activity_splash">iJarak</string>
+    <string name="app_name">Tilang Tracker</string>
+    <string name="title_activity_splash">Tilang Tracker</string>
+    <string name="title_activity_home">Beranda</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Login</string>
-    <string name="title_activity_home">Daftar Laporan</string>
 
-    <string name="title_section1">Laporan</string>
-    <string name="title_section2">Edit Prodile</string>
-    <string name="title_section3">Reported</string>
-
-    <string-array name="drawer_tabs">
-        <item>Daftar Laporan</item>
-        <item>Reported</item>
-    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
     <string name="action_example">Example action</string>
-    <string name="action_add_laporan"></string>
     <string name="title_activity_forgot_password">Forgot Password</string>
-    <string name="title_activity_add_laporan">Lapor</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_detail_laporan">Detail Laporan</string>
-    <string name="title_activity_setting">About</string>
-    <string name="title_activity_edit_profile">Edit Profile</string>
-    <string name="service_not_available">Service not available</string>
-    <string name="invalid_lat_long_used">Invalid latitude &amp; longitude used</string>
-    <string name="no_address_found">No address found</string>
-    <string name="address_found">Address found</string>
-    <string name="no_geocoder_available">No geocoder available</string>
-    <string name="no_location_data_provided">No location data provided</string>
-    <string name="title_activity_get_current_location">Location</string>
 
     <string-array name="level_spinner">
         <item>Kerusakan ringan</item>
         <item>Kerusakan sedang</item>
         <item>Kerusakan berat</item>
     </string-array>
-    <string name="title_activity_berita">BeritaActivity</string>
+
+    <string name="title_activity_berita">Berita</string>
+    <string name="title_activity_berita_list">Daftar Berita</string>
+    <string name="title_activity_tilang">Tilang</string>
+    <string name="title_activity_data_pelanggar">Data Pelanggar</string>
 </resources>

@@ -29,8 +29,6 @@ import retrofit.client.Response;
  */
 public class RegisterActivity extends ActionBarActivity {
 
-    private Toolbar toolbar;
-
     private Button registerButton;
 
     private EditText enama, elokasi, enohp, epass, epass2;
@@ -45,7 +43,7 @@ public class RegisterActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        toolbar = (Toolbar) findViewById(R.id.app_bar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setHomeButtonEnabled(true);

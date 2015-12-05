@@ -11,9 +11,8 @@
         android:orientation="vertical"
         tools:context="com.kpvelocite2015.ijarak.activity.LoginActivity">
 
-        <include
-            android:id="@+id/app_bar"
-            layout="@layout/app_bar" />
+        <include layout="@layout/app_bar_home" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/app_bar" />
 
         <com.rey.material.widget.EditText
             android:id="@+id/nameET"
@@ -137,7 +136,6 @@
 
         <com.rey.material.widget.Button
             android:id="@+id/registerButton"
-            style="@style/button"
             android:layout_width="match_parent"
             android:layout_height="37dp"
             android:layout_marginLeft="20dp"
