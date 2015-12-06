@@ -130,15 +130,15 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.home) {
 
-        } else if (id == R.id.find_now) {
+        } else if (id == R.id.tilang) {
+            Intent i = new Intent(HomeActivity.this, TilangActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.trafficRules) {
+        } else if (id == R.id.berita) {
 
-        } else if (id == R.id.trafficEducation) {
+        } else if (id == R.id.peraturan) {
 
-        } else if (id == R.id.news) {
-
-        } else if (id == R.id.plat) {
+        } else if (id == R.id.informasi) {
 
         } else if (id == R.id.logout) {
             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);

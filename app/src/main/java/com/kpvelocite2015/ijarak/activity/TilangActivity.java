@@ -53,7 +53,6 @@ public class TilangActivity extends AppCompatActivity {
         pasal.setIsi("Tidak  dilengkapi dengan    perlengkapan   berupa  ban  cadangan,      segitiga pengaman,  dongkrak,  pembuka    roda,  dan   peralatan pertolongan pertama pada kecelakaan.");
         pasal.setObyekHukum("Pengendara roda dua atau lebih");
         pasal.setDenda(250000);
-
         pasalList.add(pasal);
 
         Pasal pasal2 = new Pasal();
@@ -61,8 +60,28 @@ public class TilangActivity extends AppCompatActivity {
         pasal2.setIsi("Memasang perlengkapan yang dapat mengganggu keselamatan.");
         pasal2.setObyekHukum("Pengendara roda dua atau lebih");
         pasal2.setDenda(500000);
-
         pasalList.add(pasal2);
+
+        Pasal pasal3 = new Pasal();
+        pasal3.setNomor("Pasal 280");
+        pasal3.setIsi("Tidak memasang Tanda Nomor Kendaraan Bermotor.");
+        pasal3.setObyekHukum("Pengendara roda dua atau lebih");
+        pasal3.setDenda(500000);
+        pasalList.add(pasal3);
+
+        Pasal pasal4 = new Pasal();
+        pasal4.setNomor("Pasal 282");
+        pasal4.setIsi("Tidak  mematuhi perintah yang diberikan oleh petugas Kepolisian.");
+        pasal4.setObyekHukum("Pengendara roda dua atau lebih");
+        pasal4.setDenda(250000);
+        pasalList.add(pasal4);
+
+        Pasal pasal5 = new Pasal();
+        pasal5.setNomor("Pasal 281");
+        pasal5.setIsi("Tidak  memiliki  Surat  Izin  Mengemudi.");
+        pasal5.setObyekHukum("Pengendara roda dua atau lebih");
+        pasal5.setDenda(1000000);
+        pasalList.add(pasal5);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewPasal);
         LinearLayoutManager llm = new LinearLayoutManager(this);

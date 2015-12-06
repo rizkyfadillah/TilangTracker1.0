@@ -4,17 +4,17 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/home" android:icon="@drawable/home"
             android:title="Home" />
-        <item android:id="@+id/news" android:icon="@drawable/news"
-            android:title="News Feed" />
-        <item android:id="@+id/find_now" android:icon="@drawable/find"
+        <item android:id="@+id/tilang" android:icon="@drawable/tilang"
             android:title="Tilang" />
+        <item android:id="@+id/berita" android:icon="@drawable/berita"
+            android:title="Bertia" />
     </group>
-    <item android:title="Traffic and Education">
+    <item android:title="Peraturan dan Informasi">
         <menu>
-            <item android:id="@+id/trafficRules" android:icon="@drawable/valid"
-                android:title="Traffic Rules" />
-            <item android:id="@+id/trafficEducation" android:icon="@drawable/traffic"
-                android:title="Traffic Education" />
+            <item android:id="@+id/peraturan" android:icon="@drawable/peraturan"
+                android:title="Peraturan Lalu Lintas" />
+            <item android:id="@+id/informasi" android:icon="@drawable/informasi"
+                android:title="Informasi" />
         </menu>
     </item>
     <item android:id="@+id/logout" android:icon="@drawable/edu"
