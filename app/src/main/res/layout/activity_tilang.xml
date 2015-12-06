@@ -6,27 +6,52 @@
     tools:context="com.example.glkrenx.tt.Tilang"
     tools:showIn="@layout/tilang_header">
 
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/app_bar_home"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewPasal"
-        android:layout_below="@id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_below="@+id/recyclerViewPasal"
-        android:text="Lanjut"
-        android:textColor="@android:color/white" />
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewPasal"
+                android:layout_below="@id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/recyclerViewPasal"
+                android:text="Lanjut"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class DataPelanggarActivity extends AppCompatActivity {
 
     private TextInputLayout layoutName, layoutNIK, layoutPlat;
-    private EditText inputName, inputNIK, inputPlat;
+    private EditText name, nik, plat;
     private Button submit;
 
     RecyclerView recyclerView;
@@ -40,11 +40,19 @@ public class DataPelanggarActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        name = (EditText)findViewById(R.id.name);
+        nik = (EditText)findViewById(R.id.nik);
+        plat = (EditText)findViewById(R.id.plat);
+
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Intent intent = getIntent();
-        ArrayList<Pasal> pasalList = intent.getParcelableArrayListExtra("pasalList");
+        Intent i = getIntent();
+        ArrayList<Pasal> pasalList = i.getParcelableArrayListExtra("pasalList");
+        name.setText(i.getStringExtra("nama"));
+        nik.setText(i.getStringExtra("nik"));
+        plat.setText(i.getStringExtra("plat"));
+
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewPasal2);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -66,9 +74,6 @@ public class DataPelanggarActivity extends AppCompatActivity {
         layoutName = (TextInputLayout)findViewById(R.id.layout_name);
         layoutNIK = (TextInputLayout)findViewById(R.id.layout_nik);
         layoutPlat = (TextInputLayout)findViewById(R.id.layout_plat);
-
-        inputName = (EditText)findViewById(R.id.name);
-        inputNIK = (EditText)findViewById(R.id.nik);
 
     }
 

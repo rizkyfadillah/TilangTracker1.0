@@ -98,7 +98,7 @@ public class TilangActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(TilangActivity.this, DataPelanggarActivity.class);
+                Intent i = new Intent(TilangActivity.this, DataActivity.class);
                 startActivity(i);
             }
         });
@@ -122,7 +122,7 @@ public class TilangActivity extends AppCompatActivity {
 
                 }
 
-                Intent intent = new Intent(TilangActivity.this, DataPelanggarActivity.class);
+                Intent intent = new Intent(TilangActivity.this, DataActivity.class);
                 intent.putParcelableArrayListExtra("pasalList", pasalListSend);
                 startActivity(intent);
 
