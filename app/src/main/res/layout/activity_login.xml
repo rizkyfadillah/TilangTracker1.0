@@ -15,7 +15,7 @@
             android:layout_height="100dp"
             android:id="@+id/imageView2"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo"
+            android:src="@drawable/tilangtracker"
             android:layout_marginTop="100dp" />
 
         <EditText
@@ -33,7 +33,7 @@
             android:editable="false"
             android:clickable="false"
             android:autoText="false"
-            android:hint="Email"
+            android:hint="NIP   "
             android:layout_marginTop="50dp" />
 
         <EditText
@@ -61,7 +61,7 @@
             android:layout_marginLeft="20dp"
             android:textSize="14dp"
             android:focusableInTouchMode="false"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/accent"
             android:textColor="@android:color/white"/>
 
         <TextView
@@ -71,7 +71,7 @@
             android:id="@+id/forgotTV"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="70dp"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/cardview_dark_background" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/cardview_dark_background" />
     </LinearLayout>
 
 

@@ -135,10 +135,14 @@ public class HomeActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.berita) {
+            Intent i = new Intent(HomeActivity.this, ListBeritaActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.peraturan) {
 
         } else if (id == R.id.informasi) {
+            Intent i = new Intent(HomeActivity.this, InformasiActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.logout) {
             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
