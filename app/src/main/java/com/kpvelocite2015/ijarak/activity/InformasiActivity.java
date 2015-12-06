@@ -17,8 +17,8 @@ public class InformasiActivity extends AppCompatActivity {
     ViewPager pager;
     InformasiPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Lalu Lintas","Pelanggaran Lalu Lintas"};
-    int Numboftabs = 2;
+    CharSequence Titles[] = {"Rambu Lalu Lintas","Tips Berkendara", "Pos Pengaduan"};
+    int Numboftabs = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
