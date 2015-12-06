@@ -59,9 +59,13 @@ public class Pasal2Adapter extends RecyclerView.Adapter<Pasal2Adapter.Pasal2View
         Typeface typefaceBold = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Bold.ttf");
         Typeface typefaceLight = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf");
         Typeface typefaceMedium = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Medium.ttf");
+        Typeface typefaceItalic = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Italic.ttf");
+        Typeface typefaceCondensedBold = Typeface.createFromAsset(context.getAssets(), "fonts/RobotoCondensed-Bold.ttf");
 
         holder.vNomor.setTypeface(typefaceBold);
         holder.vIsi.setTypeface(typefaceLight);
+        holder.vObyek.setTypeface(typefaceItalic);
+        holder.vDenda.setTypeface(typefaceCondensedBold);
 
         holder.vNomor.setText(pasalList.get(position).getNomor());
         holder.vIsi.setText(pasalList.get(position).getIsi());

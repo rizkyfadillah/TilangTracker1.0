@@ -1,4 +1,4 @@
-package com.kpvelocite2015.ijarak;
+package com.kpvelocite2015.ijarak.fragment;
 
 /**
  * Created by hallidafykzir on 10/24/2015.
@@ -10,6 +10,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.kpvelocite2015.ijarak.R;
 
 /**
  * Created by Edwin on 15/02/2015.

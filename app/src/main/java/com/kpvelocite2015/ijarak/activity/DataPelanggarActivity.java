@@ -12,8 +12,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.kpvelocite2015.ijarak.DividerItemDecoration;
 import com.kpvelocite2015.ijarak.Pasal2Adapter;
 import com.kpvelocite2015.ijarak.R;
+import com.kpvelocite2015.ijarak.VerticalSpaceItemDecoration;
 import com.kpvelocite2015.ijarak.model.Pasal;
 
 import java.util.ArrayList;
@@ -27,6 +29,8 @@ public class DataPelanggarActivity extends AppCompatActivity {
     RecyclerView recyclerView;
 
     private RecyclerView.Adapter mAdapter;
+
+    private static final int VERTICAL_ITEM_SPACE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +51,16 @@ public class DataPelanggarActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(llm);
         recyclerView.setHasFixedSize(true);
         mAdapter = new Pasal2Adapter(pasalList, this);
+
+        //add ItemDecoration
+        recyclerView.addItemDecoration(new VerticalSpaceItemDecoration(VERTICAL_ITEM_SPACE));
+        //or
+        recyclerView.addItemDecoration(
+                new DividerItemDecoration(this));
+        //or
+        recyclerView.addItemDecoration(
+                new DividerItemDecoration(this, R.drawable.divider));
+
         recyclerView.setAdapter(mAdapter);
 
         layoutName = (TextInputLayout)findViewById(R.id.layout_name);
@@ -55,8 +69,6 @@ public class DataPelanggarActivity extends AppCompatActivity {
 
         inputName = (EditText)findViewById(R.id.name);
         inputNIK = (EditText)findViewById(R.id.nik);
-
-
 
     }
 

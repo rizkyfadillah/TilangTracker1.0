@@ -4,6 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.kpvelocite2015.ijarak.fragment.Tab1;
+import com.kpvelocite2015.ijarak.fragment.Tab2;
+
 /**
  * Created by Edwin on 15/02/2015.
  */

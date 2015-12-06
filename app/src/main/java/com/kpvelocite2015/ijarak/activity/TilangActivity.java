@@ -12,9 +12,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.kpvelocite2015.ijarak.DividerItemDecoration;
 import com.kpvelocite2015.ijarak.PasalAdapter;
 import com.kpvelocite2015.ijarak.R;
 import com.kpvelocite2015.ijarak.RecyclerItemClickListener;
+import com.kpvelocite2015.ijarak.VerticalSpaceItemDecoration;
 import com.kpvelocite2015.ijarak.model.Pasal;
 
 import java.util.ArrayList;
@@ -30,6 +32,8 @@ public class TilangActivity extends AppCompatActivity {
     ArrayList<Pasal> pasalList;
 
     private RecyclerView.Adapter mAdapter;
+
+    private static final int VERTICAL_ITEM_SPACE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,17 @@ public class TilangActivity extends AppCompatActivity {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(llm);
         recyclerView.setHasFixedSize(true);
+
         mAdapter = new PasalAdapter(pasalList, this);
+
+        //add ItemDecoration
+        recyclerView.addItemDecoration(new VerticalSpaceItemDecoration(VERTICAL_ITEM_SPACE));
+        //or
+        recyclerView.addItemDecoration(new DividerItemDecoration(this));
+        //or
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, R.drawable.divider));
+
+
         recyclerView.setAdapter(mAdapter);
         recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {

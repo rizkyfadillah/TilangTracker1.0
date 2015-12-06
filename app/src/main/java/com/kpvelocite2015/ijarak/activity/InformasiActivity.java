@@ -17,7 +17,7 @@ public class InformasiActivity extends AppCompatActivity {
     ViewPager pager;
     InformasiPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Keluarga","Rangkuman"};
+    CharSequence Titles[] = {"Lalu Lintas","Pelanggaran Lalu Lintas"};
     int Numboftabs = 2;
 
     @Override
@@ -51,6 +51,8 @@ public class InformasiActivity extends AppCompatActivity {
         });
 
         tabs.setBackgroundColor(getResources().getColor(R.color.accent));
+
+        tabs.setClickable(true);
 
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
