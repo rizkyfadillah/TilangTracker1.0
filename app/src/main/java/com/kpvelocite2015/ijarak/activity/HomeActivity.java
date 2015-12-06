@@ -1,6 +1,7 @@
 package com.kpvelocite2015.ijarak.activity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.kpvelocite2015.ijarak.R;
 
@@ -40,6 +42,20 @@ public class HomeActivity extends AppCompatActivity
         ImageButton peraturanButton = (ImageButton)findViewById(R.id.peraturanButton);
         ImageButton informasiButton = (ImageButton)findViewById(R.id.informasiButton);
 
+        TextView tilangTV = (TextView) findViewById(R.id.tilangTV);
+        TextView beritaTV = (TextView) findViewById(R.id.beritaTV);
+        TextView peraturanTV = (TextView) findViewById(R.id.peraturanTV);
+        TextView informasiTV = (TextView) findViewById(R.id.informasiTV);
+
+        Typeface typefaceBold = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Bold.ttf");
+        Typeface typefaceLight = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
+        Typeface typefaceMedium = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Medium.ttf");
+
+        tilangTV.setTypeface(typefaceLight);
+        beritaTV.setTypeface(typefaceLight);
+        peraturanTV.setTypeface(typefaceLight);
+        informasiTV.setTypeface(typefaceLight);
+
         tilangButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,13 +83,12 @@ public class HomeActivity extends AppCompatActivity
         informasiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent i = new Intent(HomeActivity.this, Tilang.class);
-                //startActivity(i);
+                Intent i = new Intent(HomeActivity.this, InformasiActivity.class);
+                startActivity(i);
             }
         });
 
     }
-
 
     @Override
     public void onBackPressed() {
@@ -84,7 +99,6 @@ public class HomeActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -118,14 +132,17 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.find_now) {
 
-        } else if (id == R.id.traffic_rules) {
+        } else if (id == R.id.trafficRules) {
 
-        } else if (id == R.id.traffic_edu) {
+        } else if (id == R.id.trafficEducation) {
 
         } else if (id == R.id.news) {
 
         } else if (id == R.id.plat) {
 
+        } else if (id == R.id.logout) {
+            Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

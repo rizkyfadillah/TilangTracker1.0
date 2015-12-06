@@ -28,4 +28,6 @@
     <string name="title_activity_berita_list">Daftar Berita</string>
     <string name="title_activity_tilang">Tilang</string>
     <string name="title_activity_data_pelanggar">Data Pelanggar</string>
+    <string name="title_activity_informasi">Informasi</string>
+
 </resources>

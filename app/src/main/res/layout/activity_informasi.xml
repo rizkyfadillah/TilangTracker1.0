@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kpvelocite2015.ijarak.activity.InformasiActivity">
+
+    <include layout="@layout/app_bar_home" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/app_bar" />
+
+    <com.kpvelocite2015.ijarak.SlidingTabLayout
+        android:layout_below="@id/app_bar"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_below="@id/app_bar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

@@ -11,13 +11,13 @@
     </group>
     <item android:title="Traffic and Education">
         <menu>
-            <item android:id="@+id/plat" android:icon="@drawable/valid"
+            <item android:id="@+id/trafficRules" android:icon="@drawable/valid"
                 android:title="Traffic Rules" />
-            <item android:id="@+id/traffic_rules" android:icon="@drawable/traffic"
+            <item android:id="@+id/trafficEducation" android:icon="@drawable/traffic"
                 android:title="Traffic Education" />
         </menu>
     </item>
-    <item android:id="@+id/traffic_edu" android:icon="@drawable/edu"
+    <item android:id="@+id/logout" android:icon="@drawable/edu"
         android:title="Logout" />
 
 </menu>

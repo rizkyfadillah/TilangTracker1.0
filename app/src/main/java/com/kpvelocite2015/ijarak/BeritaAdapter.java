@@ -48,7 +48,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
     public BeritaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.
                 from(parent.getContext()).
-                inflate(R.layout.recyclerview_layout, parent, false);
+                inflate(R.layout.recyclerview_berita_layout, parent, false);
 
         return new BeritaViewHolder(itemView);
     }
@@ -67,7 +67,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
         holder.vJudul.setText(berita.getJudul());
         holder.vTanggal.setText(berita.getTanggal());
         holder.vFoto.setImageResource(berita.getGambar());
-        //Picasso.with(context).load("http://36.86.177.169/kemis/public/" + berita.getFotoKeluarga()).into(holder.vFoto);
+        //Picasso.with(context).load("http://36.86.177.169/kemis/public/" + berita.getFotoKeluarga()).into(holder.vCheckbox);
     }
 
 }

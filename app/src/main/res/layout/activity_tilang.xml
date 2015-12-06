@@ -1,57 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.glkrenx.tt.Tilang"
     tools:showIn="@layout/tilang_header">
 
-    <include layout="@layout/app_bar_home" android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/app_bar" />
-
-    <LinearLayout
-        android:layout_below="@+id/app_bar"
-        android:orientation="vertical"
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewPasal"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
 
-            <SearchView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/searchView2" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/recyclerViewPasal"
+        android:text="Lanjut"
+        android:textColor="@android:color/white" />
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="500px"
-                android:id="@+id/list"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"/>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom|center_horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lanjut"
-                android:id="@+id/button"
-                android:background="@color/colorPrimary"
-                android:textColor="@android:color/white"/>
-        </LinearLayout>
-
-    </LinearLayout>
 </RelativeLayout>

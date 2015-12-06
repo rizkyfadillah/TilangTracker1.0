@@ -3,7 +3,6 @@
     <color name="primaryColor">#006633</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorHighlight">#B6B6B6</color>
-    <color name="colorAccent">#006633</color>
-    <color name="tabsScrollColor">#004D40</color>
-    <color name="ColorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#a50e19</color>
+    <color name="tabsScrollColor2">#F36F46</color>
 </resources>

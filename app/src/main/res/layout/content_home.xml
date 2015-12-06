@@ -68,7 +68,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Tilang"
-                        android:id="@+id/textView2"
+                        android:id="@+id/tilangTV"
                         android:textColor="#000000"/>
 
                 </LinearLayout>
@@ -92,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Berita"
-                        android:id="@+id/textView3"
+                        android:id="@+id/beritaTV"
                         android:textColor="#000000"/>
                 </LinearLayout>
             </LinearLayout>
@@ -123,7 +123,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Peraturan"
-                        android:id="@+id/textView4"
+                        android:id="@+id/peraturanTV"
                         android:textColor="#000000"/>
                 </LinearLayout>
 
@@ -146,7 +146,7 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text="Informasi"
-                        android:id="@+id/textView5"
+                        android:id="@+id/informasiTV"
                         android:textColor="#000000"/>
                 </LinearLayout>
             </LinearLayout>
